@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#beginGame,
+#checkPropalButton {
+    background-color: blanchedalmond;
+    margin: 0 0 15px 15px;
+    color: darkblue
+}
+
+#beginGame {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#checkPropalButton {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: blueviolet;
+}
+
+#userPropalInput {
+    margin: 0 15px;
+}
+
+#resultDiv {
+    margin-left: 15px;
+}
+
+#compteARebours {
+    margin-left: 15px;
+}
+
+.reboursDiv {
+    transition: 0.2s;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.reboursDiv.cool {
+    background-color: green;
+}
+
+.reboursDiv.warning {
+    background-color: coral;
+}
+
+.reboursDiv.danger {
+    background-color: red;
+    animation: suspens 1s infinite;
+    padding: 7px 15px;
+}
+
+#gamePropalDiv {
+    display: none;
+}
+
+@keyframes suspens {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+    33% {
+        transform: rotate(-30deg);
+        font-size: 23px;
+    }
+
+    66% {
+        transform: rotate(30deg);
+        font-size: 23px;
+    }
+
+
+}

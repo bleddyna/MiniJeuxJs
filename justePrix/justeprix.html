@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="justeprix.css">
+    <link rel="stylesheet" href="lib/confetti.css">
+
     <title>Le juste prix</title>
 </head>
 
@@ -15,11 +17,13 @@
         <button id="beginGame">Commencer la partie</button>
     </div>
     <br>
-    <div>
-        <input type="number" id="userPropalInput">
+    <div id="gamePropalDiv">
+        <input type=" number" id="userPropalInput">
         <button id="checkPropalButton">Go</button>
     </div>
-    <script src="justeprix.js"></script>
+    <div id="resultDiv"></div>
+    <div id="compteARebours" class="reboursDiv"></div>
+    <script type="module" src="justeprix.js"></script>
 </body>
 
 </html>
